@@ -45,7 +45,7 @@ public class Q2529 {
 			long temp2 = Long.parseLong(temp1);
 			if(temp2 > max) {
 				max = temp2;
-				maxStr = temp1; //가리키기
+				maxStr = temp1;
 			}
 			
 			if(temp2 < min) {
