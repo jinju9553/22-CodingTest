@@ -29,7 +29,7 @@ public class Q13549 {
 	
 	//@: 이 문제는 기본적으로는 목표지점에 도달했다고 정답인 문제가 아닙니다.
 	//만약 (*2, +1, -1)로 BFS의 코드를 작성하신 경우 해당 목표값에 도달했다고 바로 값을 출력하지 마시고, 
-	//방문시간을 계산해서 최소값으로 갱신해주는 방식으로 접근해야 합니다.
+	//방문시간을 계산해서 최소값으로 갱신(==다익스트라)해주는 방식으로 접근해야 합니다.
 	public static int BFS(int start, int target) {
 		Queue<Integer> queue = new LinkedList<>();
 		int count = 0;
@@ -68,7 +68,7 @@ public class Q13549 {
 					}
 				}
 			}
-			count += 1;
+			count += 1; //2의 배수 노드로 가지 않을 때만 증가시켜야 함
 		}
 		
 		return count; 
