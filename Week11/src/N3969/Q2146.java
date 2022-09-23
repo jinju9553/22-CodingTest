@@ -32,25 +32,22 @@ public class Q2146 {
 				island[i][j] = Integer.parseInt(st.nextToken());
 		}
 		
-		//1.같은 대륙끼리 구별하기
-		for(int i = 0; i < N; i++) {
-			for(int j = 0; j < N; j++) {
+		//1.같은 대륙끼리 구별하기 ==> O(n^2 * (n^2 + n^2)) = O(n^4)
+		for(int i = 0; i < N; i++) { //O(n)
+			for(int j = 0; j < N; j++) { //O(n)
 				if(island[i][j] == 1) //땅이 있다면
-					borderBFS(i, j, N);
+					borderBFS(i, j, N); //O(V+E)
 			}
 		}
-		
-		visited = new boolean[N][N]; //초기화
-		
-		//2.최소 다리 길이 재기
+
+		//2.최소 다리 길이 재기 ==> O(n^4)
 		for(int i = 0; i < N; i++) {
 			for(int j = 0; j < N; j++) {
+				visited = new boolean[N][N]; //초기화
 				if(island[i][j] == 1) //땅이 있다면
 					findBridgeBFS(i, j, N, border[i][j]);
 			}
 		}
-		
-		//문제: (4, 3)에서 최소길이 3이 나올텐데 1까지만 세고 함수가 종료됨. 어디서 return 시키나??
 		
 		System.out.println(min);
 	}
@@ -70,7 +67,7 @@ public class Q2146 {
 		while(!queue.isEmpty()) {
 			int size = queue.size();
 			
-			while(size-- > 0) { //사이즈가 왜 15000???
+			while(size-- > 0) {
 				Point p = queue.poll();
 				
 				int prow = 0; int pcol = 0;
@@ -105,7 +102,7 @@ public class Q2146 {
 		while(!queue.isEmpty()) {
 			int size = queue.size();
 			
-			while(size-- > 0) { //사이즈가 왜 15000???
+			while(size-- > 0) {
 				Point p = queue.poll();
 				
 				int prow = 0; int pcol = 0;
@@ -122,7 +119,6 @@ public class Q2146 {
 							}
 							else { //다른 대륙이라면 min 갱신
 								min = (count < min) ? count : min;
-								System.out.println(row + ", " + col);
 								return; //종료
 							}
 						}
