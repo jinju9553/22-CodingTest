@@ -44,7 +44,7 @@ public class Q15652 { //중복조합
 				bucket[0] = items[i];
 				solution(items, bucket, k - 1);
 			}
-			else if (bucket[lastIndex] <= items[i]) { //가장 최근에 뽑힌 것이 현재 item보다 (NEW!)같거나 작을 때에만
+			else if (bucket[lastIndex] <= items[i]) { //가장 최근에 뽑힌 것이 현재 item보다 같거나 작을 때
 				bucket[lastIndex + 1] = items[i]; 
 				solution(items, bucket, k - 1);
 			}

@@ -41,7 +41,7 @@ public class Q15649_2 { //순열
 				bucket[k] = (i + 1); //item의 값을 담는다
 				solution(N, M, k + 1);
 				
-				visited[i] = false; //순환을 마치고 돌아왔다면 재활용을 위해 값을 원복(*배웠던 거다...)
+				visited[i] = false; 
 			}
 			//방문 했으면 다음 반복문으로
 		}

@@ -3,7 +3,7 @@ package N3954;
 import java.io.*;
 import java.util.*;
 
-public class Q17298_2 { //980ms = 0.98초 (턱걸이?) (근데 이게 빠른 편임 ㅁㅊ)
+public class Q17298_2 {
 
 	public static StringBuilder sb = new StringBuilder();
 	
@@ -13,7 +13,7 @@ public class Q17298_2 { //980ms = 0.98초 (턱걸이?) (근데 이게 빠른 편임 ㅁㅊ)
 		int T = Integer.parseInt(br.readLine());
 		int[] NGE = new int[T];
 		int[] arr = new int[T];
-		Stack<Integer> stack = new Stack<>(); //candidate of max
+		Stack<Integer> stack = new Stack<>();
 		
 		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 		

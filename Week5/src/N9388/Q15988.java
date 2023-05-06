@@ -24,12 +24,11 @@ public class Q15988 {
 		
 		for(int i = 4; i <= MAX; i++) 
 			DP[i] = (DP[i - 1] + DP[i - 2] + DP[i - 3]) % divisor;
-		//여기를 나눠줘야 DP를 만들 때의 오버플로우가 생기지 않는다. (근데 왜...) 
 		
 		int target = 0;
 		while(T-- > 0) {
 			target = Integer.parseInt(br.readLine()); 
-			sb.append(DP[target]).append('\n'); //여기를 나누는 게 아니라...
+			sb.append(DP[target]).append('\n');
 		}
 		
 		System.out.println(sb);

@@ -44,7 +44,6 @@ public class Q16943 {
 				solution(item, currentSum * 10 + item[i], target, k + 1); 
 				
 				visited[i] = false;
-				//currentSum = (currentSum - item[i] * 10) / 10; 
 				//만약 값을 바꿨다면 계산한 값도 원복 
 			}
 		}

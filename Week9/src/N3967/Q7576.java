@@ -45,8 +45,6 @@ public class Q7576 {
 	
 	public static void BFS(int N, int M) {
 		Queue<Point> queue = new LinkedList<>();
-		//문제: 시작점을 어떻게 찾을 것인가?
-		//시작할 때 1인 점을 모두 Queue에 넣는다.
 		for(int i = 0; i < N; i++) {
 			for(int j = 0; j < M; j++) {
 				if(box[i][j] == 1) {
@@ -75,9 +73,7 @@ public class Q7576 {
 						}
 					}
 				}
-				//for문 끝
 			}
-			//한 레벨 끝
 			count++;
 		}
 	}

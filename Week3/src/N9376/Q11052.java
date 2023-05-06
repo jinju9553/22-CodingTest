@@ -21,17 +21,13 @@ public class Q11052 {
 			DP[i] = Integer.parseInt(st.nextToken());
 		}
 		
-		//DP[2] (2장 뽑을 때)은 점화식에 미포함?
 		DP[2] = (DP[1] * 2 > DP[2]) ? DP[1] * 2 : DP[2];
-		
-		//@: Greedy하게 가져가는 게 최적이 아닐 수도 있습니다.
-		//문제를 점화식 형태에 맞게 풀어냈나요? ==> 헐... 아니요 딴짓했네요
 		
 		//3장 이상을 뽑을 때의 DP를 최댓값으로 갱신
 		int sum; int target;
 		for(int i = 3; i <= T; i++){
 			sum = 0;
-			target = i; //뽑고싶은 장수 == 인덱스 
+			target = i; //뽑고싶은 장수 == 인덱스
 			for(int j = (i - 1); j > 0; j--) { 
 				if(j > target)
 					continue;

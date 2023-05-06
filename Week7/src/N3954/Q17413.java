@@ -15,8 +15,9 @@ public class Q17413 {
 
 		for(int i = 0; i < S.length();) {
 			if(S.charAt(i) == '<') { //괄호 시작
-				while(!stack.isEmpty()) //이전까지 스택에 있던 것들 털어넣기
+				while(!stack.isEmpty()) {
 					sb.append(stack.pop());
+				}
 				
 				sb.append(S.charAt(i++)); //괄호 열기
 				while(S.charAt(i) != '>') {

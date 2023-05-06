@@ -52,7 +52,7 @@ public class Q10828 {
 			}
 			
 		}
-		//while ³¡
+
 		System.out.println(sb);
 	}
 

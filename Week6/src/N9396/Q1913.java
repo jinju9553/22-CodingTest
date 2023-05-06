@@ -42,15 +42,13 @@ public class Q1913 {
 		int r = start / N;
 		int c = start % N;
 		
-		matrix[r][c] = 1; //i == 0
+		matrix[r][c] = 1; 
 		
 		int d = 0;
 		for(int i = 1; i < (N * N); i++) {
-			//좌표 갱신
 			r = r + dy[d];
 			c = c + dx[d];
 			
-			//다음 변량 결정
 			if(d < 3) {
 				d = d + 1;
 				if(matrix[r + dy[d]][c + dx[d]] != 0)

@@ -9,15 +9,15 @@ public class Q17087 {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		String[] temp = br.readLine().split(" ");
-		int N = Integer.parseInt(temp[0]); //동생의 수
-		int S = Integer.parseInt(temp[1]); //수빈이의 좌표(1차원)
+		int N = Integer.parseInt(temp[0]); 
+		int S = Integer.parseInt(temp[1]); 
 		
 		int gcd = -1; int idx = N;
 		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 		while(idx > 0) {
 			int A = Integer.parseInt(st.nextToken());
 			A = (S - A < 0) ? (A - S) : (S - A);
-			idx--; //좀 더러운데
+			idx--;
 			
 			if(N == 1) {
 				gcd = A;
@@ -41,7 +41,7 @@ public class Q17087 {
 	
 	public static int GCD(int A, int B) {
 		
-		int larger = (A > B) ? A : B; //이런 거 안 해도 됨
+		int larger = (A > B) ? A : B; 
 		int smaller = (A < B) ? A : B;
 		
 		if(smaller == 0) //만약 나누는 수가 0이라면

@@ -5,8 +5,6 @@ import java.util.Scanner;
 public class Q1037_2 {
 
 	public static void main(String[] args) {
-		//주의: Scanner보다 BufferedReader가 더 빠르다
-		//BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		Scanner sc = new Scanner(System.in);
 		
 		int T = sc.nextInt();

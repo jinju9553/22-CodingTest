@@ -3,9 +3,6 @@ package N9370;
 import java.util.Scanner;
 
 public class Q4375 { //시간초과, 9901에서 오버플로우 
-	//@: 큰 수를 만들지 않으면서 답을 내는 방법을 생각해 보세요. (헐...)
-	//@: 1로 구성된 수가 맞는지 판별하는 게 아니라, 1로 만들어진 수가 operand로 나눠지는 지를 판별
-
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
@@ -25,7 +22,6 @@ public class Q4375 { //시간초과, 9901에서 오버플로우
 					continue;
 				}
 				else {
-					//System.out.println(operand * multiplier);
 					System.out.println(rslt);
 					break;
 				}

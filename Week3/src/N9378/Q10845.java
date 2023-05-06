@@ -13,10 +13,9 @@ public class Q10845 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		Queue<Integer> queue = new LinkedList<>(); //제네릭을 생략하면 앞부분과 통일됨
+		Queue<Integer> queue = new LinkedList<>();
 		
 		int T = Integer.parseInt(br.readLine());
-		//라이브러리 호출? 직접 구현? ==> 둘 다 가능
 		String line; String command; int num = -999;
 		while(T-- > 0) {
 			line = br.readLine();

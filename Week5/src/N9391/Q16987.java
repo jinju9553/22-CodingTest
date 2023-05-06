@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Q16987 { //69% : 틀렸습니다 ==> 71% : 틀렸습니다 (네?) (등호를 빼셨더군요...)
+public class Q16987 {
 
 	private static boolean[] isBroken;
 	private static int count = 0;

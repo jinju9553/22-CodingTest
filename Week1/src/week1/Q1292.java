@@ -18,7 +18,7 @@ public class Q1292 {
 			for(int j = 0; j < operand; j++) {
 				sum1 += operand;
 				count++; 
-				if(count >= B) //여기서 i가 B를 넘기면 break
+				if(count >= B) 
 					break;
 			}
 			operand++;
@@ -31,7 +31,7 @@ public class Q1292 {
 			for(int j = 0; j < operand; j++) {
 				sum2 += operand;
 				count++; 
-				if((count + 1) >= A) //여기서 i가 A를 넘기면 break
+				if((count + 1) >= A) 
 					break;
 			}
 			operand++;

@@ -13,7 +13,7 @@ public class Q1935 {
 		
 		Stack<Double> stack = new Stack<>();
 		
-		double[] arr = new double[T]; //주의: T는 피연산자의 가짓수 
+		double[] arr = new double[T];
 		for(int i = 0; i < T; i++)
 			 arr[i] = Double.parseDouble(br.readLine());
 		
@@ -23,7 +23,7 @@ public class Q1935 {
 				stack.push(arr[nextCh - 'A']); //nextCh의 종류에 따라 인덱스를 결정함
 			}
 			else {
-				double op2 = stack.pop(); //LIFO 순서에 주의!!
+				double op2 = stack.pop();
 				double op1 = stack.pop();
 				switch(nextCh) {
 					case '+': {
@@ -44,7 +44,7 @@ public class Q1935 {
 					}
 				}
 			}
-		} //for문 끝
+		}
 		
 		System.out.println(String.format("%.2f", stack.pop()));
 	}

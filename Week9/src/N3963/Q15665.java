@@ -41,7 +41,6 @@ public class Q15665 { //중복순열
 			return;
 		}
 		
-		//visited 필요 없을듯
 		for(int i = 0; i < items.length; i++) {
 			bucket[k] = items[i];
 			solution(items, bucket, M, k + 1);

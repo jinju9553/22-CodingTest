@@ -27,7 +27,7 @@ public class Q2529 {
 		
 		pick(bucket, operator, T + 1, 0);
 		
-		System.out.println(maxStr); //그냥 array에 넣어놓고 정렬해서 첫 번째랑 마지막 값을 출력해도 됨
+		System.out.println(maxStr); 
 		System.out.println(minStr);
 	}
 	

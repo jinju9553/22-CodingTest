@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Q15649 { //순열 //1회차: 맞지만 10%에서 시간 초과 ==> 2회차: StringBuilder로 바꿔서 성공
+public class Q15649 {
 
 	public static StringBuilder sb = new StringBuilder();
 	

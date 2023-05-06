@@ -17,11 +17,13 @@ public class Q2156_2 {
 			DP[i] = arr[i]; //DP[0] 결정
 		}
 		
-		if(N > 1) //입력은 1부터 가능하니 런타임 에러 주의 
+		if(N > 1) { //입력은 1부터 가능하니 런타임 에러 주의 
 			DP[1] = arr[0] + arr[1];
+		}
 		
-		if(N > 2)
-			DP[2] = Math.max(DP[1], Math.max(arr[0] + arr[2], arr[1] + arr[2])); //1까지의 DP(OOX)거나, OXO거나, XOO거나
+		if(N > 2) {	//1까지의 DP(OOX)거나, OXO거나, XOO거나
+			DP[2] = Math.max(DP[1], Math.max(arr[0] + arr[2], arr[1] + arr[2])); 
+		}
 		
 		if(N > 3){
 			for(int i = 3; i < N; i++)

@@ -31,14 +31,14 @@ public class Q16948 {
 	}
 	
 	public static void BFS(int row1, int col1, int row2, int col2) {
-		Queue<Point> queue = new LinkedList<>(); //Integer 배열이 한 줄씩 들어있는 큐
+		Queue<Point> queue = new LinkedList<>();
 		Point target = new Point(row2, col2);
 		
 		visited[row1][col1] = true;
 		queue.add(new Point(row1, col1));
 		
 		int flag = 0;
-		while (!queue.isEmpty()) { //이거 맞음? ==> 네.
+		while (!queue.isEmpty()) {
 			int size = queue.size();
 
 			while (size-- > 0) {
@@ -55,15 +55,14 @@ public class Q16948 {
 						case 5: { x = p.x + 2; y = p.y + 1; break; }
 					}
 
-					//다음 좌표를 결정했다면 탐색
-					if (x < T && y < T && x > -1 && y > -1) { //체스판 범위 내라면
+					if (x < T && y < T && x > -1 && y > -1) {
 						if (!visited[x][y]) {
 							visited[x][y] = true;
 							queue.add(new Point(x, y));
 						}
 					}
-				} //for문 종료 
-			} //한 레벨 탐색 완료
+				} 
+			} 
 			count++;	
 			if(queue.contains(target)) { flag = 1; break; }
 		}

@@ -27,7 +27,7 @@ public class Q15654 {
 		for(int i = 0; i < N; i++)
 			items[i] = Integer.parseInt(s.nextToken());
 		
-		Arrays.sort(items); //다른 방법은 없을까? (일단 괜찮네요)
+		Arrays.sort(items);
 		solution(items, bucket, M);
 		System.out.println(sb);
 	}

@@ -36,14 +36,11 @@ public class Q1697 {
 		queue.add(start);
 		
 		int v = -1;
-		//재귀로 구현하는 게 낫지 않을까 
 		while(!queue.contains(target)) { //타겟을 찾을 때까지 반복
 			int size = queue.size();
 			
-			//내가 몰랐던 부분: BFS에서 트리의 레벨 구하기
 			while(size-- > 0) { //현재 큐에 있는 모든 수를 탐색했다면 하나의 레벨을 탐색 완료한 것
 				v = queue.poll();
-				//System.out.println("v: " + v + ", size: " + size);
 				
 				for(int i = 0; i < 3; i++) { //새로운 레벨을 만드는 과정
 					int nextIndex = 0;

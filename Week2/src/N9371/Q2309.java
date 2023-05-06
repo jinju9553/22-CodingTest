@@ -5,8 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-public class Q2309 { //오답: 재귀로 풀면 안됨 ==> 하나의 케이스를 찾고 종료해야 하는데, 재귀는 모든 경우를 다 찾음
-					 //따라서 중첩 for문(정말 브루트포스)으로 찾는다.
+public class Q2309 { //오답: 재귀가 아닌 중첩 for문(브루트포스)으로 풀이한다.
 
 	public static StringBuilder sb = new StringBuilder();
 	public static final int N = 9;

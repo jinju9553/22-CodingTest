@@ -24,7 +24,6 @@ public class Q1037 {
 					continue;
 				
 				if(rslt % list.get(j) != 0) {
-					//if() 증가?조건을?설정하기에는 너무 복잡한데
 					p = p + 1;
 					q = p + 1;
 					break;

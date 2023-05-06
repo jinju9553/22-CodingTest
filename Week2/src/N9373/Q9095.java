@@ -6,8 +6,7 @@ import java.io.InputStreamReader;
 
 public class Q9095 {
 
-	public static int count; //이러기 싫지만 이러면 답이 나오긴 함
-	//public static ArrayList<Integer> Memo = new ArrayList<Integer>();
+	public static int count; 
 	public static StringBuilder sb = new StringBuilder();
 	
 	public static void main(String[] args) throws NumberFormatException, IOException {

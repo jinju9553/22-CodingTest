@@ -14,7 +14,7 @@ public class Q6588 { //에라토스테네스 체(지금 코드)는 33%에서 시간초과
 		int sum; int flag;
 		while((sum = Integer.parseInt(br.readLine())) != 0) { //O(n)
 			check_prime(sum); //O(nlog(logn)) 
-			//@: 입력 범위 내의 모든 소수 배열을 한 번만 생성하세요. ==> 루프 밖으로 빼기 & 모든 입력(1,000,000)에 대해 배열을 미리 생성해보기
+			//모든 입력(1,000,000)에 대해 배열을 미리 생성해보기
 			flag = 0;
 			for(int a = 3; a < sum; a = a + 2) { 
 				if(isPrime[a] == true) //O(1)
@@ -25,7 +25,6 @@ public class Q6588 { //에라토스테네스 체(지금 코드)는 33%에서 시간초과
 				if(isPrime[b] == true) //O(1)
 					continue;
 				else {
-					//System.out.println(sum + " = " + a + " + " + b);
 					sb.append(sum);
 					sb.append(" = ");
 					sb.append(a);
